@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { routes } from '../../routes';
 import styles from './Header.module.css';
 
@@ -11,7 +11,9 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`${styles.headerContainer} container`}>
-        <p className={styles.logo}>Cocktail Api</p>
+        <Link to={routes.HOME} className={styles.logo}>
+          Cocktail Api
+        </Link>
 
         <nav className={styles.navbar}>
           <ul className={styles.navList}>

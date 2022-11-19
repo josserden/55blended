@@ -7,7 +7,7 @@
 }
 
 .logo {
-  @apply text-4xl font-black;
+  @apply text-4xl font-black text-gray-800 hover:text-gray-600 focus:text-gray-600 transition-colors;
 }
 
 .navbar {
